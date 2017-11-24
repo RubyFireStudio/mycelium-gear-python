@@ -30,6 +30,24 @@ order_id = order['order_id']  # Needed for callback requests
 payment_id = order['payment_id']  # Needed for cancelling and fetching order
 ```
 
+Example order
+```python
+{
+  'address': 'mneywByC3o1jpZ1FOi7LMvY21SwwTLjQ65',
+  'amount': 367380,
+  'amount_in_btc': '0.0036738',
+  'amount_paid_in_btc': '0.0',
+  'amount_to_pay_in_btc': '0.0036738',
+  'id': 216041,
+  'keychain_id': 7,
+  'last_keychain_id': 7,
+  'payment_id': '10916e608d3a433ca29c12a7616q26798203a951cb51ea6fabe4411a9797dce5',
+  'status': 0,
+  'tid': None,
+  'transaction_ids': []
+}
+```
+
 ### Cancel order
 ```python
 mg.cancel_order(payment_id)
